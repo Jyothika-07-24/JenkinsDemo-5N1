@@ -1,0 +1,25 @@
+package javabasics;
+
+public class patternH {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int i,j,k;
+		for(i=1;i<=5;i++) {
+			for(j=1;j<=4;j++) {
+				if((j==1 || j==4) && i!=((5/2)+1)) {
+					System.out.print("*");
+				}
+				if((j>1 && j<4) && i!=((5/2)+1)) {
+					System.out.print(" ");
+				}
+			}
+			if(i==((5/2)+1)){
+				for(k=1;k<=4;k++)
+					System.out.print("*");
+			}
+			System.out.println();
+		}
+	}
+
+}
